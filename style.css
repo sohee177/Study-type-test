@@ -1,0 +1,22 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f2f2f2;
+  padding: 2rem;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.question {
+  margin-bottom: 1.5rem;
+}
+button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+}
+.hidden {
+  display: none;
+}

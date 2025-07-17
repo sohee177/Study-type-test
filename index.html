@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>공부 유형 검사기</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>📘 공부 유형 검사기</h1>
+
+    <form id="quizForm">
+      <div class="question">
+        <p>1. 공부 계획을 미리 세우고 계획에 맞춰 공부하는 편인가요?</p>
+        <label><input type="radio" name="q1" value="y" required> 예</label>
+        <label><input type="radio" name="q1" value="n"> 아니요</label>
+      </div>
+
+      <div class="question">
+        <p>2. 공부할 때, 개념을 구조화시켜 이해하는 편인가요?</p>
+        <label><input type="radio" name="q2" value="y" required> 예</label>
+        <label><input type="radio" name="q2" value="n"> 아니요</label>
+      </div>
+
+      <div class="question">
+        <p>3. 친구와 함께 공부할 때, 더 집중이 잘 되나요?</p>
+        <label><input type="radio" name="q3" value="y" required> 예</label>
+        <label><input type="radio" name="q3" value="n"> 아니요</label>
+      </div>
+
+      <div class="question">
+        <p>4. 한번 공부를 시작하면 1시간 이상 집중을 이어갈 수 있나요?</p>
+        <label><input type="radio" name="q4" value="y" required> 예</label>
+        <label><input type="radio" name="q4" value="n"> 아니요</label>
+      </div>
+
+      <button type="submit">결과 보기</button>
+    </form>
+
+    <div id="result" class="hidden">
+      <h2>🎯 결과</h2>
+      <p id="typeCode"></p>
+      <p id="typeDescription"></p>
+      <p id="studyTip"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
